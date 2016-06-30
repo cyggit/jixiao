@@ -2,6 +2,6 @@
 __author__ = 'cyg'
 
 from flask import Blueprint
-main=Blueprint('main',__name__)
+main=Blueprint('main',__name__,template_folder="/templates")
 
 from . import views,errors

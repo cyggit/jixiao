@@ -10,4 +10,9 @@ from ..models import *
 
 @main.route('/',methods=['GET','POST'])
 def index():
-    return render_template('index.html')
+    return render_template('main/index.html')
+
+@main.route('/desktop',methods=['POST'])
+def make_desktop(username):
+    #TODO VALIDATION
+    return render_template('main/desktop.html')
